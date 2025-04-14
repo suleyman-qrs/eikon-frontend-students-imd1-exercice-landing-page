@@ -30,6 +30,7 @@ body {
     align-items: center;
     padding: 20px 40px;
     background-color: #fff;
+    margin-left: 200px;
 }
 
 .header-container h1 {
@@ -52,18 +53,26 @@ body {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    margin-right: 200px;
 }
 
 /* Hero Section */
 .hero {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 60px 20px;
+    text-align: left;
 }
 
 .hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    font-family: "Sentex-Regular";
+    margin: 0;
+    font-family: "PT Serif";
+    width: 600px;
+    color: #0C0C0C;
+    font-family: "PT Serif";
+    font-size: 90px;
+    line-height: 100px; 
 }
 
 .hero .about-us {
@@ -71,20 +80,37 @@ body {
     color: #fff;
     border: none;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 40px;
     cursor: pointer;
     margin-bottom: 40px;
+    margin-top: 10px;
 }
 
 .hero-images {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
+    gap: 40px; 
+    margin-top: 40px;
 }
 
 .hero-images img {
-    width: 150px;
-    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    max-width: 280px;
+    border-radius: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.hero-images img:first-child {
+    max-width: 400px;
+    z-index: 2;
+}
+
+.hero-images img:last-child {
+    position: absolute;
+    transform: translate(180px, 120px);
+    z-index: 2;
 }
 
 .scroll-indicator img {
@@ -102,7 +128,7 @@ body {
     color: #a05d3a;
     font-size: 1.8rem;
     margin-bottom: 10px;
-    font-family: "Sentex-Regular";
+    font-family: "PT Serif";
 }
 
 /* Features Section */
@@ -114,7 +140,7 @@ body {
 .features h2 {
     font-size: 2rem;
     margin-bottom: 10px;
-    font-family: "Sentex-Regular";
+    font-family: "PT Serif";
 }
 
 .features-grid {
@@ -125,11 +151,17 @@ body {
 }
 
 .features-grid div {
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    gap: 10px;
 }
 
 .features-grid img {
-    width: 40px;
+    width: 50px; 
+    height: 50px; 
     margin-bottom: 10px;
 }
 
