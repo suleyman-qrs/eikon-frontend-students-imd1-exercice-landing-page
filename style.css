@@ -1,0 +1,230 @@
+/* General Reset */
+body, h3, p, ul, li, a, button, input {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "San Francisco";
+}
+
+body {
+    font-family: "San Francisco";
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+  }
+
+  @font-face {
+    font-family: 'Sentex-Regular';
+    src: url('/fonts/Sentex-Regular.ttf');
+  }
+/* Header */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #fff;
+}
+
+.header-container h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Sentex-Regular";
+    
+}
+
+
+.social-icons a img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.order-now {
+    background-color: #a05d3a;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: "Sentex-Regular";
+}
+
+.hero .about-us {
+    background-color: #a05d3a;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.hero-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero-images img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.scroll-indicator img {
+    margin-top: 20px;
+    width: 30px;
+}
+
+/* Intro Section */
+.intro {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.intro h2 {
+    color: #a05d3a;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-family: "Sentex-Regular";
+}
+
+/* Features Section */
+.features {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.features h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-family: "Sentex-Regular";
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.features-grid div {
+    text-align: center;
+}
+
+.features-grid img {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.discover-more {
+    background-color: #a05d3a;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Promo Section */
+.promo {
+    background-color: #a05d3a;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.promo h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.promo form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.promo input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.promo button {
+    background-color: #fff;
+    color: #a05d3a;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer-container {
+    background-color: #f8f8f8;
+    padding: 40px 20px;
+}
+
+.footer-brand {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-brand h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-family: "Sentex-Regular";
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.footer-links h4 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 5px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.payment-icons img {
+    width: 40px;
+    margin: 0 5px;
+}
